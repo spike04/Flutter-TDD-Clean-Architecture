@@ -12,8 +12,10 @@ Clean Architecture Implementation Sample for Flutter from Reso Coder from Youtub
 ```
 ├── lib
 │   ├── core
-│   │   └── error
-│   │       └── failure.dart
+│   │   ├── error
+│   │   │   └── failure.dart
+│   │   └── usecases
+│   │       └── usecase.dart
 │   ├── features
 │   │   └── number_trivia
 │   │       ├── data
@@ -26,7 +28,8 @@ Clean Architecture Implementation Sample for Flutter from Reso Coder from Youtub
 │   │       │   ├── repositories
 │   │       │   │   └── number_trivia_respoitory.dart
 │   │       │   └── usecases
-│   │       │       └── get_concrete_number_trivia.dart
+│   │       │       ├── get_concrete_number_trivia.dart
+│   │       │       └── get_random_number_trivia.dart
 │   │       └── presentation
 │   │           ├── bloc
 │   │           ├── pages
@@ -39,18 +42,22 @@ Clean Architecture Implementation Sample for Flutter from Reso Coder from Youtub
             ├── data
             ├── domain
             │   └── usecases
-            │       └── get_concrete_number_trivia_test.dart
+            │       ├── get_concrete_number_trivia_test.dart
+            │       └── get_random_number_trivia_test.dart
             └── presentation
 ```
 
 ### In Lib
 - Working in Domain layer specifically entity and usecases.
-- Added Entity Class
-- Added Repository Abstract Representation
+- Added Entity Class.
+- Added Repository Abstract Representation.
 - Added Usecase for getting ConcreteNumberTrivia.
+- Added Abstract Base UseCase Class.
+- Added Usecase for getting RandomNumberTrivia.
 
 ### In Test
 - Created Folder Structure for Test Case
-- Wrote Test for getConcreteNumberTrivia
+- Wrote Test for getConcreteNumberTrivia.
+- Wrote Test for getRandomNumberTrivia.
 
 ...
